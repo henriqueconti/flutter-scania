@@ -1,4 +1,5 @@
 import 'package:challenge_scania/view/caminhao/cadastro_view.dart';
+import 'package:challenge_scania/view/caminhao/lista_view.dart';
 import 'package:flutter/material.dart';
 
 class HomeView extends StatefulWidget {
@@ -25,7 +26,8 @@ class _HomeViewState extends State<HomeView> {
         controller: controller,
         onPageChanged: setPaginaAtual,
         children: [
-          CadastroView(),
+          ListaView(),
+          CadastroView()
         ],
       ),
       bottomNavigationBar: BottomNavigationBar(
@@ -33,9 +35,13 @@ class _HomeViewState extends State<HomeView> {
         type: BottomNavigationBarType.fixed,
         items: const [
           BottomNavigationBarItem(
-              icon: Icon(Icons.time_to_leave), label: 'Caminhões'),
+              icon: Icon(Icons.time_to_leave), 
+              label: 'Caminhões'
+              ),
           BottomNavigationBarItem(
-              icon: Icon(Icons.add), label: 'Cadastrar')
+              icon: Icon(Icons.add), 
+              label: 'Cadastrar'
+              )
         ],
         onTap: (pagina) {
           controller.animateToPage(

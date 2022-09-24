@@ -18,6 +18,7 @@ class _CadastroCaminhaoViewState extends State<CadastroView> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        backgroundColor: Colors.blue[900],
         title: const Text('Cadastrar Caminhão'),
       ),
       body: SingleChildScrollView(
