@@ -4,8 +4,8 @@ class Caminhao {
   int? id;
   double valor;
   String modelo;
-  String ano;
-  int capacidadeCarga;
+  int ano;
+  double capacidadeCarga;
   TipoCaminhao tipoCaminhao;
 
   Caminhao({
