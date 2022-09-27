@@ -1,1 +1,1 @@
-enum TipoCaminhao {VeiculoUrbano, SemiPesado, Pesado}
+enum TipoCaminhao {Urbano, SemiPesado, Pesado}

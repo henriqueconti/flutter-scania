@@ -140,7 +140,7 @@ class _CadastroCaminhaoViewState extends State<CadastroView> {
         ),
         RadioListTile<TipoCaminhao>(
           title: const Text('Caminhão Urbano'),
-          value: TipoCaminhao.VeiculoUrbano,
+          value: TipoCaminhao.Urbano,
           groupValue: tipoCaminhaoSelecionado,
           onChanged: (TipoCaminhao? value) {
             if (value != null) {
@@ -161,14 +161,14 @@ class _CadastroCaminhaoViewState extends State<CadastroView> {
         hintText: 'Informe o modelo',
         labelText: 'Modelo',
         border: OutlineInputBorder(),
-        prefixIcon: Icon(Icons.email),
+        prefixIcon: Icon(Icons.car_crash_outlined),
       ),
       validator: (value) {
         if (value == null || value.isEmpty) {
           return 'Informe o modelo';
         }
-        if (value.length < 10 || value.length > 30) {
-          return 'O modelo deve conter de 10 a 30 caracteres';
+        if (value.length < 5 || value.length > 15) {
+          return 'O modelo deve conter de 5 a 15 caracteres';
         }
         return null;
       },
@@ -182,7 +182,7 @@ class _CadastroCaminhaoViewState extends State<CadastroView> {
         hintText: 'Informe o valor',
         labelText: 'Valor',
         border: OutlineInputBorder(),
-        prefixIcon: Icon(Icons.money),
+        prefixIcon: Icon(Icons.monetization_on_outlined),
       ),
       validator: (value) {
         if (value == null || value.isEmpty) {
@@ -230,7 +230,7 @@ class _CadastroCaminhaoViewState extends State<CadastroView> {
         hintText: 'Informe a capacidade de carga (Kg)',
         labelText: 'Capacidade de Carga (Kg)',
         border: OutlineInputBorder(),
-        prefixIcon: Icon(Icons.money),
+        prefixIcon: Icon(Icons.monitor_weight_outlined),
       ),
       validator: (value) {
         if (value == null || value.isEmpty) {
